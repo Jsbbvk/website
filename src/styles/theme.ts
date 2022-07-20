@@ -11,6 +11,7 @@ const theme = createTheme({
   },
   typography: {
     button: { textTransform: 'none' },
+    fontFamily: '"QuickSand", sans-serif',
   },
 })
 
