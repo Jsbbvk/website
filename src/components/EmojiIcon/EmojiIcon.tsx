@@ -18,6 +18,7 @@ const EmojiIcon = ({
     <img
       alt={alt}
       src={src}
+      title={alt}
       style={{
         width,
         height,

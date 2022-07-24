@@ -40,6 +40,7 @@ const Landing = () => {
                 <EmojiIcon alt="Express.js" src="/images/icons/expressjs.png" />
                 <EmojiIcon alt="React.js" src="/images/icons/react.png" />
                 <EmojiIcon alt="Node.js" src="/images/icons/nodejs.png" />
+                <EmojiIcon alt="MUI" src="/images/icons/mui.png" />
               </Box>
             </Stack>
 
