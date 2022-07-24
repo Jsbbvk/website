@@ -84,6 +84,19 @@ const Landing = () => {
                 />
               </a>
               <a
+                href="https://linkedin.com/in/jacobzhang132"
+                title="LinkedIn"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <EmojiIcon
+                  alt="LinkedIn"
+                  src="/images/icons/linkedin.png"
+                  height="20px"
+                  width="20px"
+                />
+              </a>
+              <a
                 href="https://www.instagram.com/jacobzzzzzzzzzz"
                 target="_blank"
                 rel="noreferrer"
