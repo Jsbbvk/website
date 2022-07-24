@@ -1,16 +1,9 @@
 import { Twemoji } from 'react-emoji-render'
-import { Fade, Stack, Typography, Box } from '@mui/material'
+import { Box, Fade, Stack, Typography } from '@mui/material'
 import Image from 'next/image'
-import profilePic from '../../../public/profile.jpg'
-import {
-  Wrapper,
-  AnimatedSmoke,
-  AnimatedWave,
-  AnimatedTrain,
-  Arrow,
-  LeftArrow,
-  RightArrow,
-} from './styled'
+import profilePic from '/public/images/profile.jpg'
+import { Wrapper, AnimatedSmoke, AnimatedWave, AnimatedTrain } from './styled'
+import { EmojiIcon } from '@/components/EmojiIcon'
 
 const Landing = () => {
   return (
@@ -39,9 +32,29 @@ const Landing = () => {
                 <Twemoji text="👋" />
               </AnimatedWave>
             </Typography>
-            <Typography sx={{ mt: 2 }}>cs @ purdue &apos;23</Typography>
 
-            <Typography>
+            <Stack mt={2} flexDirection="row" justifyContent="center">
+              <Typography>fullstack web dev</Typography>
+              <Box>
+                <EmojiIcon alt="MongoDB" src="/images/icons/mongodb.png" />
+                <EmojiIcon alt="Express.js" src="/images/icons/expressjs.png" />
+                <EmojiIcon alt="React.js" src="/images/icons/react.png" />
+                <EmojiIcon alt="Node.js" src="/images/icons/nodejs.png" />
+              </Box>
+            </Stack>
+
+            <Typography sx={{ mt: 1 }}>
+              cs @ purdue &apos;23{' '}
+              <EmojiIcon
+                alt="Purdue"
+                src="/images/icons/purdue.png"
+                width="22px"
+                height="auto"
+                verticalAlign="0"
+              />
+            </Typography>
+
+            <Typography sx={{ mt: 0.5 }}>
               <AnimatedTrain>
                 <Twemoji text="🚂" />
                 <AnimatedSmoke>
@@ -49,14 +62,56 @@ const Landing = () => {
                 </AnimatedSmoke>
               </AnimatedTrain>
             </Typography>
+
+            <Stack
+              mt={4}
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+              spacing={2}
+            >
+              <a
+                href="https://github.com/Jsbbvk"
+                target="_blank"
+                rel="noreferrer"
+                title="Github"
+              >
+                <EmojiIcon
+                  alt="Github"
+                  src="/images/icons/github.png"
+                  height="20px"
+                  width="20px"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/jacobzzzzzzzzzz"
+                target="_blank"
+                rel="noreferrer"
+                title="Instagram"
+              >
+                <EmojiIcon
+                  alt="Instagram"
+                  src="/images/icons/instagram.png"
+                  height="20px"
+                  width="20px"
+                />
+              </a>
+              <a
+                href="mailto:jacobzhang132@gmail.com"
+                title="Gmail"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <EmojiIcon
+                  alt="Gmail"
+                  src="/images/icons/gmail.png"
+                  height="20px"
+                  width="20px"
+                />
+              </a>
+            </Stack>
           </Stack>
         </Stack>
-        <Box>
-          <Arrow>
-            <LeftArrow />
-            <RightArrow />
-          </Arrow>
-        </Box>
       </Wrapper>
     </Fade>
   )

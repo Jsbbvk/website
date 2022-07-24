@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import { Landing } from '@/components/Landing'
 import Head from 'next/head'
+import { About } from '@/components/About'
 
 const Home: NextPage = () => (
   <>
@@ -26,6 +27,7 @@ const Home: NextPage = () => (
       />
     </Head>
     <Landing />
+    {/* <About /> */}
   </>
 )
 

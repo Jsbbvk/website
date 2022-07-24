@@ -1,4 +1,4 @@
-import { Container, styled } from '@mui/material'
+import { Container, styled, Box } from '@mui/material'
 import emotionStyled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
 
@@ -64,7 +64,7 @@ export const RightArrow = emotionStyled.div`
 
 export const Wrapper = styled(Container)({
   textAlign: 'center',
-  height: '100vh',
+  height: '85vh',
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'column',
