@@ -1,11 +1,15 @@
 import { Twemoji } from 'react-emoji-render'
-import { Box, Fade, Stack, Typography } from '@mui/material'
+import { Box, Fade, Stack, Typography, useTheme } from '@mui/material'
 import Image from 'next/image'
 import profilePic from '/public/images/profile.jpg'
 import { Wrapper, AnimatedSmoke, AnimatedWave, AnimatedTrain } from './styled'
 import { EmojiIcon } from '@/components/EmojiIcon'
 
 const Landing = () => {
+  const {
+    palette: { mode },
+  } = useTheme()
+
   return (
     <Fade in timeout={1000}>
       <Wrapper>
@@ -78,7 +82,9 @@ const Landing = () => {
               >
                 <EmojiIcon
                   alt="Github"
-                  src="/images/icons/github.png"
+                  src={`/images/icons/github${
+                    mode === 'dark' ? '-dark' : ''
+                  }.png`}
                   height="20px"
                   width="20px"
                 />
